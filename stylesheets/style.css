@@ -1,10 +1,13 @@
 :root{
     --transparent-color: rgba(0,0,0,0);
     --transparent-half: rgba(0, 0, 0, 0.60);
-    --trans-white: rgba(255, 255, 255, 1);
+    --trans-white: rgba(255, 255, 255, .6);
+    --trans-light-grey: rgba(219, 219, 219, .7);
+    --light-grey: rgb(185, 185, 185);
     --dark-blue: rgb(0, 20, 45);
     --trans-light-blue: rgba(112, 229, 255, 0.484);
     --light-blue: rgb(40, 116, 154);
+    --lightest-blue: rgb(133, 243, 255);
     --navbar-height: 100px;
     --art-tile-large: 300px;
     --project-tile-large: 350px;
@@ -163,6 +166,7 @@ h1 {
     justify-content: center;
     padding: 10px;
     box-shadow: black 15px 15px 15px;
+    cursor: pointer;
 }
 .project-tile{
     background-color: var(--dark-blue);
@@ -211,6 +215,7 @@ h1 {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    background-color: var(--trans-light-grey);
 }
 .art-img {
     flex: none;
@@ -232,6 +237,9 @@ h1 {
     justify-content: center;
     align-items: center;
     z-index: 10;
+    padding: 10px;
+    border: 5px solid black;
+    box-shadow: white 0px 0px 50px;
 }
 .modalImg {
     width: auto;
@@ -240,9 +248,28 @@ h1 {
     flex: none;
     z-index: 11;
 }
+#modal-hider {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    z-index: 15;
+    background-color: var(--transparent-half);
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
 #photo {
     background-image: radial-gradient(var(--transparent-color) 40%, var(--dark-blue) 100%),
                       url(https://live.staticflickr.com/65535/51890283757_f4f134ef18_h.jpg);
+}
+#todo {
+    background-image: radial-gradient(var(--transparent-color) 40%, var(--dark-blue) 100%),
+                      url(https://live.staticflickr.com/65535/52085399403_eec972f05b_o.jpg);
 }
 #poker {
     background-image: radial-gradient(var(--transparent-color) 40%, var(--dark-blue) 100%),

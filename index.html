@@ -10,7 +10,8 @@
         <nav id='navbar'>
             <div id='nav-links'>
                 <a class='nav-link' href='#welcome-section'>Welcome</a>
-                <a class='nav-link' href='#projects'>Projects</a>
+                <a class='nav-link' href='#web-dev'>Web</a>
+                <a class='nav-link' href='#game-dev'>Game</a>
                 <a class='nav-link' href='#art-section'>Art</a>
             </div>
         </nav>
@@ -29,12 +30,18 @@
         </div>
         <div id='projects' class='main-section'>
             <h1 class='header'>Projects</h1>
-            <h3 class='header sub-header'>Web Development</h3>
+            <h3 class='header sub-header' id='web-dev'>Web Development</h3>
             <div class='projects-div'>
                 <a href='./pages/photo-viewer.html'>
                     <div class='tile project-tile'>
                         <h3 class='project-title'>Photo App</h3>
                         <div class='project-img-div' id='photo'></div>
+                    </div>
+                </a>
+                <a href='./pages/todo-list.html'>
+                    <div class='tile project-tile'>
+                        <h3 class='project-title'>To-Do List</h3>
+                        <div class='project-img-div' id='todo'></div>
                     </div>
                 </a>
                 <a href='./pages/poker.html'>
@@ -50,7 +57,7 @@
                     </div>
                 </a>
             </div>
-            <h3 class='header sub-header'>Game Development</h3>
+            <h3 class='header sub-header' id='game-dev'>Game Development</h3>
             <div class='projects-div'>
                 <a href='./pages/eggdrop.html'>
                     <div class='tile project-tile'>
@@ -117,6 +124,7 @@
                 </div>
             </div>
         </div>
+        <div id='modal-hider' class='hide'></div>
         <script src='./scripts/index.js' type='text/javascript'></script>
     </body>
 </html>
