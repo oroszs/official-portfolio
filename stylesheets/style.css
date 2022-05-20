@@ -63,7 +63,7 @@ body {
     position: relative;
     box-sizing: border-box;
 }
-.welcome-info {
+#welcome-info {
     font-size: 24pt;
     flex: none;
 }
@@ -122,6 +122,7 @@ h1 {
     padding: 20px;
     width: fit-content;
     margin: auto;
+    margin-top: 50px;
 }
 .sub-header {
     color: white;
@@ -146,14 +147,13 @@ h1 {
     height: 350px;
     flex: none;
 }
-.projects-div {
+.main-section-wrapper {
     position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: space-between;
-    width: 75%;
     gap: 100px 100px;
     margin: auto;
     margin-top: 100px;
@@ -200,16 +200,6 @@ h1 {
 .project-img {
     background-size: cover;
     background-position: center;
-}
-#art-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: space-evenly;
-    flex-wrap: wrap;
-    gap: 100px 100px;
-    margin-top: 100px;
-    margin-bottom: 100px;
 }
 .art-div {
     display: flex;
@@ -313,8 +303,12 @@ h1 {
         width: auto;
         height: 70%;
     }
+    .modalImg {
+        width: auto;
+        height: 100%;
+    }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px), (max-height: 500px) {
     .tile{
         width: var(--project-tile-small);
         height: var(--project-tile-small);
@@ -342,5 +336,48 @@ h1 {
     }
     .project-title {
         font-size: 17pt;
+    }
+}
+@media screen and (max-height: 500px) {
+    #welcome-main {
+        top: 100%;
+        transform: translate(0, -100%)
+    }
+    #navbar {
+        --navbar-height: 50px;
+    }
+    #profile-div {
+        width: 125px;
+        height: 125px;
+    }
+    #profile-picture {
+        width: 150px;
+        height: 150px;
+    }
+    #welcome-info {
+        font-size: 15pt;
+    }
+    .icon {
+        width: 35px;
+        height: 35px;
+    }
+    #linkedin-icon {
+        width: 37px;
+        height: 37px;
+    }
+    .main-section-wrapper {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        gap: 40px 40px;
+    }
+    #art-header {
+        margin-bottom: 25px;
+    }
+    .sub-header {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .header {
+        margin-top: 0px;
     }
 }
