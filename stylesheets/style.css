@@ -5,11 +5,13 @@
     --trans-light-grey: rgba(219, 219, 219, .7);
     --light-grey: rgb(185, 185, 185);
     --dark-blue: rgb(0, 20, 45);
+    --darkest-blue: rgb(0, 10, 21);
     --trans-light-blue: rgba(112, 229, 255, 0.484);
     --light-blue: rgb(40, 116, 154);
-    --lightest-blue: rgb(133, 243, 255);
+    --lightest-blue: rgb(82, 172, 218);
     --navbar-height: 100px;
     --art-tile-large: 300px;
+    --art-tile-small: 250px;
     --project-tile-large: 350px;
     --project-tile-small: 250px;
 }
@@ -104,10 +106,13 @@ h1 {
     width: 55px;
     height: 55px;
 }
+.main-section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
 #projects {
     background-color: var(--light-blue);
     width: 100%;
-    padding: 25px;
     box-sizing: border-box;
 }
 .header {
@@ -165,8 +170,8 @@ h1 {
     flex-direction: column;
     justify-content: center;
     padding: 10px;
-    box-shadow: black 15px 15px 15px;
     cursor: pointer;
+    box-shadow: black 15px 15px 15px;
 }
 .project-tile{
     background-color: var(--dark-blue);
@@ -185,14 +190,16 @@ h1 {
     font-size: 20pt;
     margin: 0px;
 }
-.project-img-div {
-    position: relative;
-    border-radius: 100%;
+.img-div {
     width: calc(var(--project-tile-large) - 50px);
     height: calc(var(--project-tile-large) - 50px);
+    position: relative;
+    border-radius: 100%;
+    border: solid white 5px;
+}
+.project-img {
     background-size: cover;
     background-position: center;
-    border: solid white 5px;
 }
 #art-div {
     display: flex;
@@ -204,12 +211,7 @@ h1 {
     margin-top: 100px;
     margin-bottom: 100px;
 }
-.art-img-div {
-    position: relative;
-    border-radius: 100%;
-    width: calc(var(--project-tile-large) - 50px);
-    height: calc(var(--project-tile-large) - 50px);
-    border: solid white 5px;
+.art-div {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -225,8 +227,6 @@ h1 {
 }
 .modal {
     position: fixed;
-    width: auto;
-    height: 80vh;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -296,16 +296,51 @@ h1 {
 #art-section {
     background-color: var(--dark-blue);
     width: 100%;
-    padding: 25px;
     box-sizing: border-box;
 }
+@media (orientation: portrait) {
+    .modal {
+        width: 80%;
+        height: auto;
+    }
+    .modalImg {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (orientation: landscape) {
+    .modal {
+        width: auto;
+        height: 70%;
+    }
+}
 @media screen and (max-width: 500px) {
-    .project-tile{
+    .tile{
         width: var(--project-tile-small);
         height: var(--project-tile-small);
     }
-    .project-img-div {
+    .img-div {
         width: calc(var(--project-tile-small) - 20px);
         height: calc(var(--project-tile-small) - 20px);
+    }
+    .art-img {
+        width: var(--art-tile-small);
+    }
+    .nav-link {
+        font-size: 14pt;
+    }
+    #profile-div {
+        width: 275px;
+        height: 275px;
+    }
+    #profile-picture {
+        width: 325px;
+        height: 325px;
+    }
+    .sub-header {
+        font-size: 14pt;
+    }
+    .project-title {
+        font-size: 17pt;
     }
 }
