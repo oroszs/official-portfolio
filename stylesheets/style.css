@@ -349,7 +349,7 @@ h1 {
         --navbar-height: 50px;
     }
     #welcome-main {
-        top: 5px;
+        top: 15px;
         transform: translate(0,0);
     }
     #profile-div {
