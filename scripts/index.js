@@ -1,3 +1,5 @@
+//This branch is in development, and will include seperate pages for each project
+
 const modal = (imgSrc) => {
     let hider = document.querySelector('#modal-hider');
     let modalDiv = document.createElement('div');
