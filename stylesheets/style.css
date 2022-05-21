@@ -22,6 +22,8 @@ html {
 body {
     margin: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+    position: absolute;
 }
 #navbar {
     position: fixed;
@@ -57,10 +59,10 @@ body {
 #welcome-section {
     color: white;
     text-align: center;
-    width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: var(--dark-blue);
     box-sizing: border-box;
+    position: relative;
 }
 #welcome-info {
     font-size: 24pt;
@@ -110,6 +112,7 @@ h1 {
 .main-section {
     padding-top: 25px;
     padding-bottom: 25px;
+    position: relative;
 }
 #projects {
     background-color: var(--light-blue);
