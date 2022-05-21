@@ -341,12 +341,12 @@ h1 {
     }
 }
 @media screen and (max-height: 500px) {
-    #welcome-main {
-        top: 60%;
-        transform: translate(0, -60%)
-    }
     :root {
         --navbar-height: 50px;
+    }
+    #welcome-main {
+        top: 50px;
+        transform: translate(0,0);
     }
     #profile-div {
         width: 125px;
