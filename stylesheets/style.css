@@ -342,8 +342,8 @@ h1 {
 }
 @media screen and (max-height: 500px) {
     #welcome-main {
-        top: 100%;
-        transform: translate(0, -100%)
+        top: 60%;
+        transform: translate(0, -60%)
     }
     :root {
         --navbar-height: 50px;
