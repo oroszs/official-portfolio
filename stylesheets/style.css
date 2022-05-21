@@ -60,7 +60,6 @@ body {
     width: 100%;
     height: 100vh;
     background-color: var(--dark-blue);
-    position: relative;
     box-sizing: border-box;
 }
 #welcome-info {
@@ -79,6 +78,8 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: auto;
+    height: 100%;
 }
 #link-div {
     flex: none;
@@ -345,16 +346,16 @@ h1 {
         --navbar-height: 50px;
     }
     #welcome-main {
-        top: 50px;
+        top: 5px;
         transform: translate(0,0);
     }
     #profile-div {
-        width: 125px;
-        height: 125px;
+        width: 100px;
+        height: 100px;
     }
     #profile-picture {
-        width: 150px;
-        height: 150px;
+        width: 125px;
+        height: 125px;
     }
     #welcome-info {
         font-size: 15pt;
