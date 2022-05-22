@@ -295,6 +295,12 @@ h1 {
     background-image: radial-gradient(var(--transparent-color) 40%, var(--dark-blue) 100%),
                       url(https://live.staticflickr.com/65535/51997934039_d502d0e854_o.jpg);
 }
+#cave {
+    background-image : radial-gradient(var(--transparent-color) 40%, var(--dark-blue) 100%),
+                      url(https://live.staticflickr.com/65535/52091619224_433949a7f2_o.jpg);
+}
+
+
 .temp{
     background-image: radial-gradient(var(--transparent-color) 40%, var(--dark-blue) 100%),
                       url(https://i.imgur.com/jWBxLEb.jpg?1);
