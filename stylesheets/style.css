@@ -195,21 +195,12 @@ h1 {
     box-shadow: black 15px 15px 15px;
     transition: all 1s ease;
 }
-.tile:hover {
-    width: calc(var(--project-tile-large) + var(--tile-enlarge-amount));
-    height: calc(var(--project-tile-large) + var(--tile-enlarge-amount));
-}
 .project-tile{
     background-color: var(--dark-blue);
 }
-.project-tile:hover {
-    background-color: var(--light-blue);
-}
+
 .art-tile {
     background-color: var(--light-blue);
-}
-.art-tile:hover {
-    background-color: var(--lightest-blue);
 }
 .project-title {
     position: absolute;
@@ -349,14 +340,22 @@ h1 {
         height: 100%;
     }
 }
+@media screen and (min-width: 1300px) {
+    .tile:hover {
+        width: calc(var(--project-tile-large) + var(--tile-enlarge-amount));
+        height: calc(var(--project-tile-large) + var(--tile-enlarge-amount));
+    }
+    .art-tile:hover {
+        background-color: var(--lightest-blue);
+    }
+    .project-tile:hover {
+        background-color: var(--light-blue);
+    }
+}
 @media screen and (max-width: 500px) {
     .tile{
         width: var(--project-tile-small);
         height: var(--project-tile-small);
-    }
-    .tile:hover {
-        width: calc(var(--project-tile-small) + var(--tile-enlarge-amount));
-        height: calc(var(--project-tile-small) + var(--tile-enlarge-amount));
     }
     .img-div {
         width: calc(var(--project-tile-small) - 20px);
@@ -435,10 +434,6 @@ h1 {
     .tile{
         width: var(--project-tile-smallest);
         height: var(--project-tile-smallest);
-    }
-    .tile:hover {
-        width: calc(var(--project-tile-smallest) + var(--tile-enlarge-amount));
-        height: calc(var(--project-tile-smallest) + var(--tile-enlarge-amount));
     }
     .img-div {
         width: calc(var(--project-tile-smallest) - 20px);
