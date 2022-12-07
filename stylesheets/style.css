@@ -293,6 +293,10 @@ h1 {
     background-image: radial-gradient(var(--transparent-color) 40%, var(--dark-blue) 100%),
                       url(https://live.staticflickr.com/65535/51992869061_5126cfe084_o.jpg);
 }
+#slime {
+    background-image: radial-gradient(var(--transparent-color) 40%, var(--dark-blue) 100%),
+                      url(https://live.staticflickr.com/65535/52548245683_6085462f72_o.jpg);
+}
 #eggdrop {
     background-image: radial-gradient(var(--transparent-color) 40%, var(--dark-blue) 100%),
                       url(https://live.staticflickr.com/65535/52095409261_501732afe5_o.jpg);
