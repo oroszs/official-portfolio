@@ -277,6 +277,10 @@ h1 {
 .show {
     display: block;
 }
+#pets {
+    background-image: radial-gradient(var(--transparent-color) 40%, var(--dark-blue) 100%),
+                      url(https://live.staticflickr.com/65535/52860527123_6f731ff0da.jpg);
+}
 #photo {
     background-image: radial-gradient(var(--transparent-color) 40%, var(--dark-blue) 100%),
                       url(https://live.staticflickr.com/65535/51890283757_f4f134ef18_h.jpg);
