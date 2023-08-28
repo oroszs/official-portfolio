@@ -28,6 +28,9 @@ body {
     height: 100%;
     position: absolute;
 }
+a {
+    text-decoration: none;
+}
 #navbar {
     position: fixed;
     width: 100%;
@@ -212,10 +215,32 @@ h1 {
     font-size: 20pt;
     margin: 0px;
 }
+.project-button-holder {
+    width: 100%;
+    height: auto;
+    z-index: 7;
+    bottom: -100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex: none;
+}
+.project-button {
+    background-color: var(--transparent-half);
+    box-shadow: 0px 0px 5px var(--transparent-half);
+    padding: 10px;
+    color: white;
+    font-size: 12pt;
+    border-radius: 5px;
+    margin: 15px;
+    font-weight: bold;
+}
 .img-div {
     width: calc(var(--project-tile-large) - 50px);
     height: calc(var(--project-tile-large) - 50px);
-    position: relative;
+    position: absolute;
     border-radius: 100%;
     border: solid white 5px;
 }
@@ -348,15 +373,17 @@ h1 {
     }
 }
 @media screen and (min-width: 1300px) {
-    .tile:hover {
-        width: calc(var(--project-tile-large) + var(--tile-enlarge-amount));
-        height: calc(var(--project-tile-large) + var(--tile-enlarge-amount));
-    }
     .art-tile:hover {
         background-color: var(--lightest-blue);
     }
     .project-tile:hover {
         background-color: var(--light-blue);
+    }
+    .project-button:hover {
+        background-color: black;
+    }
+    .project-button {
+        transition: all 1s ease;
     }
     .tile {
         transition: all 1s ease;
@@ -370,6 +397,14 @@ h1 {
     .img-div {
         width: calc(var(--project-tile-small) - 20px);
         height: calc(var(--project-tile-small) - 20px);
+    }
+    .project-button-holder {
+        bottom: -80px;
+    }
+    .project-button {
+        padding: 7px;
+        margin: 5px;
+        font-size: 10pt;
     }
     .art-img {
         width: var(--art-tile-small);
@@ -448,6 +483,14 @@ h1 {
     .img-div {
         width: calc(var(--project-tile-smallest) - 20px);
         height: calc(var(--project-tile-smallest) - 20px);
+    }
+    .project-button-holder {
+        bottom: -65px;
+    }
+    .project-button {
+        padding: 5px;
+        margin: 4px;
+        font-size: 8pt;
     }
     .art-img {
         width: var(--art-tile-smallest);
