@@ -490,7 +490,7 @@ h1 {
     .project-button {
         padding: 5px;
         margin: 4px;
-        font-size: 8pt;
+        font-size: 7pt;
     }
     .art-img {
         width: var(--art-tile-smallest);
