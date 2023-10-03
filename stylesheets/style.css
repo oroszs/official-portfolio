@@ -170,6 +170,8 @@ h1 {
     width: 350px;
     height: 350px;
     flex: none;
+    left: 5px;
+    position: relative;
 }
 .main-section-wrapper {
     position: relative;
@@ -419,6 +421,7 @@ h1 {
     #profile-picture {
         width: 325px;
         height: 325px;
+        left: initial;
     }
     .sub-header {
         font-size: 14pt;
@@ -449,6 +452,7 @@ h1 {
     #profile-picture {
         width: 125px;
         height: 125px;
+        left: 2px;
     }
     #welcome-info {
         font-size: 15pt;
