@@ -69,9 +69,14 @@ a {
     box-sizing: border-box;
     position: relative;
 }
-#welcome-info {
+.welcome-header {
     font-size: 24pt;
     flex: none;
+}
+.welcome-info {
+    font-size: 18pt;
+    flex: none;
+    margin-top: 0px;
 }
 h1 {
     color: white;
@@ -454,8 +459,11 @@ h1 {
         height: 125px;
         left: 2px;
     }
-    #welcome-info {
+    .welcome-header {
         font-size: 15pt;
+    }
+    .welcome-info {
+        font-size: 10pt;
     }
     .icon {
         width: 35px;
