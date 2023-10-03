@@ -421,7 +421,7 @@ h1 {
     #profile-picture {
         width: 325px;
         height: 325px;
-        left: initial;
+        left: 2px;
     }
     .sub-header {
         font-size: 14pt;
