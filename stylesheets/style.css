@@ -312,7 +312,7 @@ h1 {
 }
 #time-clock {
     background-image: radial-gradient(var(--transparent-color) 40%, var(--dark-blue) 100%),
-                      url(../media/time-clock-3.jpg);
+                      url(https://live.staticflickr.com/65535/55512061468_2b9acd3f17_b.jpg);
 }
 #pets {
     background-image: radial-gradient(var(--transparent-color) 40%, var(--dark-blue) 100%),
