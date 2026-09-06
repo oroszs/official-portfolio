@@ -33,7 +33,6 @@
                 <a class='nav-link' href='#welcome-section'>Welcome</a>
                 <a class='nav-link' href='#web-dev'>Web</a>
                 <a class='nav-link' href='#game-dev'>Game</a>
-                <a class='nav-link' href='#art-header'>Art</a>
             </div>
         </nav>
         <div id='welcome-section' class='dark-section'>
@@ -42,7 +41,7 @@
                     <img src='https://live.staticflickr.com/65535/53229483207_6303678589_k.jpg' id='profile-picture'>
                 </div>
                 <h1 class='welcome-header'>Sean Orosz</h1>
-                <h3 class='welcome-info'>Front End Web Developer</h3>
+                <h3 class='welcome-info'>Full Stack Web Developer</h3>
                 <div id='link-div'>
                     <a id='profile-link' href='https://github.com/oroszs' target='_blank'><img src='https://i.imgur.com/zWN5IFa.png' class='icon'></a>
                     <a href='https://www.linkedin.com/in/sean-orosz/' target='_blank'><img src='https://i.imgur.com/iUb9epF.png' class='icon' id='linkedin-icon'></a>
@@ -50,10 +49,17 @@
                 </div>
             </div>
         </div>
-        <div id='projects' class='main-section light-section'>
-            <h1 class='header main-header'>Projects</h1>
+        <div class='main-section light-section'>
             <h3 class='header sub-header' id='web-dev'>Web Development</h3>
             <div class='main-section-wrapper'>
+                <div class="tile project-tile">
+                    <h3 class='project-title'>Time Clock Calculator</h3>
+                    <div class="project-img img-div" id="time-clock"></div>
+                    <div class='project-button-holder'>
+                        <a target="_blank" href='https://time-clock-calculator.netlify.app/'><div class='project-button'>View App</div></a>
+                        <a target="_blank" href='https://github.com/oroszs/time-clock-calculator'><div class='project-button'>View Code</div></a>
+                    </div>
+                </div>
                 <div class='tile project-tile'>
                     <h3 class='project-title'>Penciled Pets</h3>
                     <div class='project-img img-div' id='pets'></div>
@@ -86,88 +92,37 @@
                         <a target='_blank' href='https://github.com/oroszs/React-Practice-1/'><div class='project-button'>View Code</div></a>
                     </div>
                 </div>
-                <div class='tile project-tile'>
-                    <h3 class='project-title'>Weather App</h3>
-                    <div class='project-img img-div' id='weather'></div>
-                    <div class='project-button-holder'>
-                        <a target='_blank' href='https://oroszs.github.io/WeatherApp/'><div class='project-button'>View App</div></a>
-                        <a target='_blank' href='https://github.com/oroszs/WeatherApp/'><div class='project-button'>View Code</div></a>
-                    </div>
-                </div>
             </div>
+        </div>
+        <div class="main-section dark-section">
             <h3 class='header sub-header' id='game-dev'>Game Development</h3>
             <div class='main-section-wrapper'>
-                <div class='tile project-tile'>
+                <div class='tile art-tile'>
                     <h3 class='project-title'>Slime Climb</h3>
                     <div class='project-img img-div' id='slime'></div>
                     <div class='project-button-holder'>
                         <a target='_blank' href='https://github.com/oroszs/playdate-slime/'><div class='project-button'>View Code</div></a>
                     </div>
                 </div>
-                <div class='tile project-tile'>
+                <div class='tile art-tile'>
                     <h3 class='project-title'>EggDrop</h3>
                     <div class='project-img img-div' id='eggdrop'></div>
                     <div class='project-button-holder'>
                         <a target='_blank' href='https://github.com/oroszs/EggDrop/'><div class='project-button'>Download</div></a>
                     </div>
                 </div>
-                <div class='tile project-tile'>
+                <div class='tile art-tile'>
                     <h3 class='project-title'>The Cave</h3>
                     <div class='project-img img-div' id='cave'></div>
                     <div class='project-button-holder'>
                         <a target='_blank' href='https://github.com/oroszs/cave/'><div class='project-button'>Download</div></a>
                     </div>
                 </div>
-                <div class='tile project-tile'>
+                <div class='tile art-tile'>
                     <h3 class='project-title'>Try To Survive!</h3>
                     <div class='project-img img-div' id='survive'></div>
                     <div class='project-button-holder'>
                         <a target='_blank' href='https://github.com/oroszs/TryToSurvive/'><div class='project-button'>Download</div></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id='art-section' class='main-section dark-section'>
-            <h1 class='header main-header' id='art-header'>Art</h1>
-            <div class='main-section-wrapper'>
-                <div class='tile art-tile' id='snake'>
-                    <div class='art-div img-div'>
-                        <img class='art-img' src='https://live.staticflickr.com/65535/52003275208_0ae1513d85_o.png'>
-                    </div>
-                </div>
-                <div class='tile art-tile' id='eye'>
-                    <div class='art-div img-div'>
-                        <img class='art-img' src='https://live.staticflickr.com/65535/52003470769_f80bd65f19_o.jpg'>
-                    </div>
-                </div>
-                <div class='tile art-tile' id='alien'>
-                    <div class='art-div img-div'>
-                        <img class='art-img' src='https://live.staticflickr.com/65535/52003274593_b39acb736f_o.png'>
-                    </div>
-                </div>
-                <div class='tile art-tile' id='octopus'>
-                    <div class='art-div img-div'>
-                        <img class='art-img' src='https://live.staticflickr.com/65535/52002198357_78712b196f_o.jpg'>
-                    </div>
-                </div>
-                <div class='tile art-tile' id='plant'>
-                    <div class='art-div img-div'>
-                        <img class='art-img' src='https://live.staticflickr.com/65535/52003476884_f2f373f983_o.jpg'>
-                    </div>
-                </div>
-                <div class='tile art-tile' id='teeth'>
-                    <div class='art-div img-div'>
-                        <img class='art-img' src='https://live.staticflickr.com/65535/52003471409_e1df9f409e_o.jpg'>
-                    </div>
-                </div>
-                <div class='tile art-tile' id='coral'>
-                    <div class='art-div img-div'>
-                        <img class='art-img' src='https://live.staticflickr.com/65535/52003281123_124963d3e1_o.jpg'>
-                    </div>
-                </div>
-                <div class='tile art-tile' id='ufo'>
-                    <div class='art-div img-div'>
-                        <img class='art-img' src='https://live.staticflickr.com/65535/52003281448_a94ccb1531_o.jpg'>
                     </div>
                 </div>
             </div>

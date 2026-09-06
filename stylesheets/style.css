@@ -142,11 +142,11 @@ h1 {
     margin: auto;
 }
 .header, .project-title {
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 5px 5px 10px rgba(58, 58, 58, 0.521);
 }
-#art-header {
+#game-dev {
     background-color: var(--light-blue);
-    box-shadow: 0px 0px 10px var(--lightest-blue);
+    box-shadow: rgba(12, 50, 133, 0.404) 10px 10px 20px;
 }
 .main-header {
     font-size: 30pt;
@@ -200,16 +200,17 @@ h1 {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    cursor: default;
     padding: 10px;
-    cursor: pointer;
-    box-shadow: black 15px 15px 15px;
 }
 .project-tile{
     background-color: var(--dark-blue);
+    box-shadow: rgba(41, 41, 41, 0.363) 10px 10px 20px;
 }
 
 .art-tile {
     background-color: var(--light-blue);
+    box-shadow: rgba(12, 50, 133, 0.404) 10px 10px 20px;
 }
 .project-title {
     position: absolute;
@@ -309,6 +310,10 @@ h1 {
 .show {
     display: block;
 }
+#time-clock {
+    background-image: radial-gradient(var(--transparent-color) 40%, var(--dark-blue) 100%),
+                      url(../media/time-clock-3.jpg);
+}
 #pets {
     background-image: radial-gradient(var(--transparent-color) 40%, var(--dark-blue) 100%),
                       url(https://live.staticflickr.com/65535/52860527123_6f731ff0da.jpg);
@@ -381,19 +386,23 @@ h1 {
 }
 @media screen and (min-width: 1300px) {
     .art-tile:hover {
-        background-color: var(--lightest-blue);
+        background-color: rgb(0, 148, 240);
+        box-shadow: rgba(5, 30, 85, 0.664) 5px 5px 10px;
     }
     .project-tile:hover {
-        background-color: var(--light-blue);
+        background-color: rgb(0, 38, 83);
+        box-shadow: rgba(24, 24, 24, 0.349) 5px 5px 10px;
     }
     .project-button:hover {
+        cursor: pointer;
         background-color: black;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.685);
     }
     .project-button {
-        transition: all 1s ease;
+        transition: all 750ms ease;
     }
     .tile {
-        transition: all 1s ease;
+        transition: all 750ms ease;
     }
 }
 @media screen and (max-width: 500px) {
